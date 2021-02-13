@@ -15,6 +15,7 @@ public class testDivisibleBy7 {
                 System.out.print(boolsOut[i] + ", ");
             }
             System.out.println(boolsOut[2] + "}");
+            input.close();
             System.exit(0);
         }
 

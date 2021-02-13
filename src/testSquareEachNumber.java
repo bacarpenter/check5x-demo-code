@@ -17,6 +17,7 @@ public class testSquareEachNumber {
                 System.out.print(numsOut[i] + ", ");
             }
             System.out.println(numsOut[2] + "}");
+            input.close();
             System.exit(0);
         }
     }
