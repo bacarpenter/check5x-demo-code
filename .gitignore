@@ -28,3 +28,6 @@ hs_err_pid*
 # Python files, for check5x
 tests/__pycache__
 tests/__init__.py
+
+# Check outputs
+tests/outputs/*
