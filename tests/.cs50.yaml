@@ -1,5 +1,8 @@
 check50:
   checks:
+    compileSourceCode:
+      - run: javac -cp src/ src/ExampleClass.java && javac -cp src/ src/testDivisibleBy7.java -d bin && javac -cp src/ src/testSquareEachNumber.java -d bin
+        exit: 0
     squareEachNumber:
       - run: cd bin && java testSquareEachNumber
         stdin: 1 2 3

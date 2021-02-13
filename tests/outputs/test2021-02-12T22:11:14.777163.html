@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <title>This is check51.</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>check51</h1>
+        <h2>../check5x-demo-code/tests</h2>
+        <hr />
+         
+        <h3 style="color: green">✅ printWorkingDir</h3>
+         
+        <div class="well well-sm">
+             
+          <samp>
+            <b>Log</b><br />
+            <div
+              style="
+                border: 2px solid;
+                padding: 2px;
+                max-height: 20em;
+                overflow: scroll;
+              "
+            >
+               running pwd...
+              <br />
+              
+            </div>
+          </samp>
+               
+        </div>
+          
+        <h3 style="color: red">❌ compileSourceCode</h3>
+         
+        <div class="well well-sm">
+           
+          <p>
+            <b>Cause</b><br />
+             expected&nbsp;exit&nbsp;code&nbsp;0,&nbsp;not&nbsp;2 
+            <br />
+              
+          </p>
+            
+          <samp>
+            <b>Log</b><br />
+            <div
+              style="
+                border: 2px solid;
+                padding: 2px;
+                max-height: 20em;
+                overflow: scroll;
+              "
+            >
+               running javac src/ExampleClass.java -d bin &amp;&amp; javac src/testDivisibleBy7.java -d bin &amp;&amp; javac src/testSquareEachNumber.java -d bin...
+              <br />
+               checking that program exited with status 0...
+              <br />
+              
+            </div>
+          </samp>
+               
+        </div>
+          
+        <h3 style="color: red">❌ squareEachNumber</h3>
+         
+        <div class="well well-sm">
+           
+          <p>
+            <b>Cause</b><br />
+             expected&nbsp;&#34;{1.0,&nbsp;4.0,&nbsp;9.0...&#34;,&nbsp;not&nbsp;&#34;/bin/bash:&nbsp;lin...&#34; 
+            <br />
+              
+          </p>
+            
+          <samp>
+            <b>Log</b><br />
+            <div
+              style="
+                border: 2px solid;
+                padding: 2px;
+                max-height: 20em;
+                overflow: scroll;
+              "
+            >
+               running cd bin &amp;&amp; java testSquareEachNumber...
+              <br />
+               sending input 1 2 3...
+              <br />
+               checking for output &#34;{1.0, 4.0, 9.0}&#34;...
+              <br />
+              
+            </div>
+          </samp>
+             
+          <br />
+          <div class="row">
+            <div class="col-md-6">
+              <b>Expected Output:</b>
+              <br />
+              <div style="background-color: black; color: white">
+                <samp>
+                      {1.0,&nbsp;4.0,&nbsp;9.0} 
+                </samp>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <b>Actual Output:</b>
+              <br />
+              <div style="background-color: black; color: white">
+                <samp>
+                     
+                  /bin/bash:&nbsp;line&nbsp;0:&nbsp;cd:&nbsp;bin:&nbsp;No&nbsp;such&nbsp;file&nbsp;or&nbsp;directory<br /> 
+                </samp>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+          
+        <h3 style="color: red">❌ divisibleBy7</h3>
+         
+        <div class="well well-sm">
+           
+          <p>
+            <b>Cause</b><br />
+             expected&nbsp;&#34;{true,&nbsp;false,&nbsp;...&#34;,&nbsp;not&nbsp;&#34;/bin/bash:&nbsp;lin...&#34; 
+            <br />
+              
+          </p>
+            
+          <samp>
+            <b>Log</b><br />
+            <div
+              style="
+                border: 2px solid;
+                padding: 2px;
+                max-height: 20em;
+                overflow: scroll;
+              "
+            >
+               running cd bin &amp;&amp; java testDivisibleBy7...
+              <br />
+               sending input 7 5 14...
+              <br />
+               checking for output &#34;{true, false, true}&#34;...
+              <br />
+              
+            </div>
+          </samp>
+             
+          <br />
+          <div class="row">
+            <div class="col-md-6">
+              <b>Expected Output:</b>
+              <br />
+              <div style="background-color: black; color: white">
+                <samp>
+                      {true,&nbsp;false,&nbsp;true} 
+                </samp>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <b>Actual Output:</b>
+              <br />
+              <div style="background-color: black; color: white">
+                <samp>
+                     
+                  /bin/bash:&nbsp;line&nbsp;0:&nbsp;cd:&nbsp;bin:&nbsp;No&nbsp;such&nbsp;file&nbsp;or&nbsp;directory<br /> 
+                </samp>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+         
+      </div>
+    </div>
+  </body>
+</html>
